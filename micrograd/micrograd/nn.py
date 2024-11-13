@@ -19,7 +19,7 @@ class Neuron(Module):
     self.non_linear: bool = non_linear
   
   # process input x to neuron, return activation
-  def __call__(self, x: Value | float) -> Value:
+  def __call__(self, x: list[Value | float]) -> Value:
     pass # TODO (NB: Remember to use ReLU if non-linear!)
 
   # returns list of all parameters
